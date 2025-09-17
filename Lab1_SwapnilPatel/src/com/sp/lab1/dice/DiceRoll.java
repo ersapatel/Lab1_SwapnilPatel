@@ -8,12 +8,11 @@ public class DiceRoll {
 	public static void main(String[] args) {
 		System.out.print("Please enter the number of dice: ");
 
-        // Initializing the Scanner object to read input
+        
         Scanner input = new Scanner(System.in);
         int numberOfDice = input.nextInt();
 
-        // Initializing the Random object for
-        // generating random numbers
+        
         SecureRandom ranNum = new SecureRandom();
 
         System.out.print("Hey Geek! You rolled: ");
@@ -21,8 +20,7 @@ public class DiceRoll {
 
         for (int i = 0; i < numberOfDice; i++) {
 
-            // Generating the random number and storing it
-            // in the 'randomNumber' variable
+           
         	int randomNumber = ranNum.nextInt(6) + 1;
             total = total + randomNumber;
             System.out.print(randomNumber);
